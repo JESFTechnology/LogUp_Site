@@ -883,3 +883,139 @@ footer {
         align-items: flex-start;
     }
 }
+
+
+/* Service care / Part 5 */
+.service-care {
+    background: var(--soft);
+}
+
+.service-care .section-heading {
+    max-width: 760px;
+}
+
+.service-care-lead {
+    max-width: 700px;
+    margin-top: 22px;
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.service-care-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.service-care-card {
+    min-height: 320px;
+    padding: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: var(--white);
+    transition: .3s ease;
+}
+
+.service-care-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 45px rgba(11,36,71,.08);
+}
+
+.service-care-number {
+    color: #91a1b7;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.service-care-icon {
+    width: 48px;
+    height: 48px;
+    margin: 24px 0 18px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: rgba(8,124,255,.09);
+    color: var(--blue);
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.service-care-card h3 {
+    color: var(--navy);
+    font-size: 21px;
+    letter-spacing: -.6px;
+}
+
+.service-care-card p {
+    margin-top: 13px;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.75;
+}
+
+.service-care-featured {
+    background: var(--navy);
+    border-color: var(--navy);
+}
+
+.service-care-featured h3 {
+    color: var(--white);
+}
+
+.service-care-featured .service-care-number {
+    color: #6e88a7;
+}
+
+.service-care-featured .service-care-icon {
+    background: rgba(8,124,255,.16);
+    color: var(--blue-light);
+}
+
+.service-care-featured p {
+    color: #aebdce;
+}
+
+.service-care-metrics {
+    margin: 15px 0 0;
+    padding-left: 18px;
+    color: #dce7f2;
+    font-size: 13px;
+    line-height: 1.75;
+}
+
+.service-care-metrics li + li {
+    margin-top: 8px;
+}
+
+.iso-note {
+    padding-top: 15px;
+    border-top: 1px solid rgba(255,255,255,.14);
+}
+
+.academic-note {
+    margin-top: 25px;
+    padding: 16px 18px;
+    border: 1px dashed #b9cce0;
+    border-radius: 10px;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.academic-note strong {
+    color: var(--navy);
+}
+
+@media (max-width: 900px) {
+    .service-care-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-care-card {
+        min-height: auto;
+    }
+}
